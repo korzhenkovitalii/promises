@@ -38,7 +38,7 @@ function onClick() {
   const timerId = setInterval(() => {
     const currentDate = Date.now();
 
-    deltaTime = selectedDate - currentDate;
+    const deltaTime = selectedDate - currentDate;
     if (currentDate > selectedDate) {
       clearInterval(timerId);
     }
