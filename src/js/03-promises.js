@@ -23,7 +23,7 @@ function onFormSubmit(event) {
 
   console.log(delay, step, amount);
 
-  for (let position = 0; position < amount; position++) {
+  for (let position = 1; position < amount; position++) {
     createPromise(position, delay)
       .then(({ position, delay }) => {
         Notiflix.Notify.success(`Fulfiled promise ${position} in ${delay}ms`);
